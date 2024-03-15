@@ -1,0 +1,112 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --white: #ffffff;
+  --blue: #007bff;
+  --black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(https://images.unsplash.com/photo-1536514498073-50e69d39c6cf?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: var(--black);
+}
+
+
+header,
+.forecast-header {
+  font-family: "Secular One", sans-serif;
+  line-height: 200%;
+}
+
+header,
+#search-button,
+.forecast-header {
+  background-color: var(--blue); 
+  color: var(--white);
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.search-history .searched-city-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+}
+
+.searched-city-btn:hover {
+  background-color: var(--blue); 
+}
+
+
+#current-weather {
+  line-height: 200%;
+}
+
+.date-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+#current-weather-icon,
+#forecast-weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: -20px;
+}
+
+.weather-conditions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.forecast-five-day {
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  justify-content: space-around;
+  padding: 1%;
+  margin: 1%;
+  background-color: var(--blue); 
+  border-radius: 10px;
+  color: var(--white); 
+}
+
+.forecast-five-day {
+  box-shadow: 
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.forecast-five-day li {
+  position: relative;
+  vertical-align: top;
+}
+
+
+header.card-header {
+    background-color: var(--blue); 
+    color: var(--white); 
+    font-family: "Secular One", sans-serif;
+    line-height: 200%;
+  }
